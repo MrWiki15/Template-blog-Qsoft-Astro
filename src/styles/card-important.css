@@ -1,0 +1,79 @@
+
+p{
+    margin: 0;
+    font-size: 0.75em;
+}
+
+.important-card{
+    width: 400px;
+    height: 480px;
+    border-radius: 35.025px;
+    border: 1px solid #363636;
+    background: linear-gradient(169deg, rgba(58, 129, 191, 0.08) 1.85%, rgba(65, 48, 90, 0.08) 98.72%);
+    backdrop-filter: blur(555px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 5%;
+    width: 90%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.info{
+    height: 15%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 10px;
+    margin-top: -10px;
+    align-items: center;
+    
+}
+
+.info img{
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+    margin-left: -20px;
+}
+
+.name-artist{
+    grid-column: 4 / 6;
+    grid-row: 1 / 2;
+}
+
+.price{
+    grid-column: 4 / 6;
+    grid-row: 2 / 3;
+}
+
+.name-picture{
+    grid-column: 7 / 10;
+    grid-row: 1 / 2;
+    text-align: end;
+}
+
+.info section {
+    grid-column: 8 / 10;
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 7px;
+    margin-right: 7px;
+}
+
+.svg{
+    width: 25px;
+    height: 25px;
+}

@@ -1,0 +1,100 @@
+---
+import Botton from "./Botton.astro"
+import "../styles/cards.css"
+
+const { 
+
+    title="title",
+    all="Ver Mas -->",
+    urlAll="#",
+    img="/blog-placeholder-3.jpg",
+    imgDescription="Descripcion de la imagen",
+    name="Nombre de la obra",
+    price="0.5 ETH",
+
+ } = Astro.props
+
+
+---
+
+<section id="section2" class="section2">
+
+
+    <section class="section2__content">
+
+        <section class="section2__content--card">
+            
+            <img class="section2__content--card-img" src={img} alt={imgDescription}>
+
+            <section class="section2__content--card-important">
+                <p class="section2__content--card-name">{name}</p>
+                <p class="section2__content--card-price">{price}</p>
+            </section>
+
+            <section class="section2__content--card-botton">
+                <Botton 
+                    text="Comprame"
+                    width="90%"
+                    backgroundColor="transparent"
+                />
+            </section>
+        </section>
+        
+
+        <section class="section2__content--card">
+            
+            <img class="section2__content--card-img" src={img} alt={imgDescription}>
+
+            <section class="section2__content--card-important">
+                <p class="section2__content--card-name">{name}</p>
+                <p class="section2__content--card-price">{price}</p>
+            </section>
+
+            <section class="section2__content--card-botton">
+                <Botton 
+                    text="Comprame"
+                    width="90%"
+                    backgroundColor="transparent"
+                />
+            </section>
+        </section>
+
+
+        <section class="section2__content--card">
+            
+            <img class="section2__content--card-img" src={img} alt={imgDescription}>
+
+            <section class="section2__content--card-important">
+                <p class="section2__content--card-name">{name}</p>
+                <p class="section2__content--card-price">{price}</p>
+            </section>
+
+            <section class="section2__content--card-botton">
+                <Botton 
+                    text="Comprame"
+                    width="90%"
+                    backgroundColor="transparent"
+                />
+            </section>
+        </section>
+
+
+        <section class="section2__content--card">
+            
+            <img class="section2__content--card-img" src={img} alt={imgDescription}>
+
+            <section class="section2__content--card-important">
+                <p class="section2__content--card-name">{name}</p>
+                <p class="section2__content--card-price">{price}</p>
+            </section>
+
+            <section class="section2__content--card-botton">
+                <Botton 
+                    text="Comprame"
+                    width="90%"
+                    backgroundColor="transparent"
+                />
+            </section>
+        </section>
+    </section>
+</section>

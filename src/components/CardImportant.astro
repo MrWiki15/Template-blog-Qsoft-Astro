@@ -1,0 +1,39 @@
+---
+import "../styles/card-important.css"
+
+const { 
+
+    img="/blog-placeholder-1.jpg", 
+    profilePicture="/blog-placeholder-2.jpg",
+    nameArtist="Patricia",
+    price="1.25 ETH",
+    namePicture="Cosas de la Vida",
+    likes="25",
+    alt="Obra",
+
+ }= Astro.props
+
+---
+
+<section class="important-card">
+    <img class="img" src={img} alt={alt}>
+
+
+    <section class="info">
+        <img src={profilePicture} alt="">
+        <p class="name-artist">{nameArtist}</p>
+        <p class="price">{price}</p>
+        <p class="name-picture">{namePicture}</p>
+
+        <section>
+            <svg class="svg" viewBox="0 0 24 24" fill="none">
+                <path d="M15.7 4C18.87 4 21 6.98 21 9.76C21 15.39 12.16 20 
+                        12 20C11.84 20 3 15.39 3 9.76C3 6.98 5.13 4 8.3 
+                        4C10.12 4 11.31 4.91 12 5.71C12.69 4.91 13.88 4 15.7 4Z" 
+                        stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                </path> 
+            </svg>
+            <p>{likes}</p>
+        </section>
+    </section>
+</section>
