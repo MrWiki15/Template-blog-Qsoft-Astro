@@ -1,69 +1,14 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Botton from '../components/Botton.astro';
-import CardImportant from '../components/CardImportant.astro';
+import Home from "../layouts/Home.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import "../styles/home.css"
-import Cards from '../components/Cards.astro';
-import Tutorial from '../components/Tutorial.astro';
-import CardsExplorer from '../components/CardsExplorer.astro';
 ---
-
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<section class="section1">
-				<section class="section1__text">
-					<h4>Discover, collect,  and charity in extraordinary NFT marketplace</h4>
-					<p>In aenean posuere lorem risus nec. Tempor tincidunt aenean purus purus vestibulum nibh mi venenatis as.fn af ,dv ew</p>
-
-					<section class="section1__booton">
-						<Botton 
-							url="https://www.chaindocs.org" 
-							width="130px"
-							height="40px"
-							padding="20px"
-						/>
-
-						<Botton 
-							backgroundColor="transparent"
-							width="130px"
-							height="40px"
-						/>
-					</section>
-				</section>
-				
-				<section>
-					<CardImportant />
-				</section>
-			</section>
-			
-			<Cards 
-				title="Comprame algo plis"
-			/>
-
-			<section class="section3">
-				<h4>Porque Nosotros ?</h4>
-				<h5>Eu, molestie commodo, enim pellentesque turpis integer sagittis</h5>
-
-				<Tutorial 
-					description1="La seguridad es nuestra prioridad"
-					description2="La blockchain es incorructible"
-					description3="Mira nuestras fotos"
-					description4="Nos vamos a la luna"
-				/>
-			</section>
-
-			<CardsExplorer />
-		
-		</main>
-		<Footer />
+		<Home />
 	</body>
 </html>
