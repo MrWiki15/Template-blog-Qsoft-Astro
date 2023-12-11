@@ -1,26 +1,172 @@
 ---
-const opciones = ['opción 1', 'opción 2', 'opción 3', 'opción 4', 'opción 5'];
+import Botton from "./Botton.astro";
+
+const { 
+
+    logoTipe="/blog-placeholder-5.jpg",
+
+
+ }=Astro.props
 ---
 
 <header>
-    <nav>
-        <section>
-            <img src="" alt="">
+    <nav class="nav">
+        <section class="nav__logotype">
+            <img src={logoTipe}>
         </section>
 
-        <section>
-            <!-- <input type="text" id="busqueda" list="opciones">
-            <datalist id="opciones">
-                
-                {opciones.forEach(opcion => {
-                    <option value={opcion}></option>
-                    console.log(opcion)
-                })};
-
-            </datalist> -->
+        <div class="nav__content">
+            <div class="nav__content--container">
+                <section class="drawn">
+                    <Botton 
+                        width="170px"
+                        height="40px"
+                        fontzise="20px"
+                        url="#"
+                        target="__self"
+                    />
+                </section>
+    
+                <section>
+                    <ul id="ul" class="ul1">
+                        <li>Coleccion</li>
+                        <li>Coleccion</li>
+                        <li>Coleccion</li>
+                        <li>Coleccion</li>
+                    </ul>
+                </section>
+            </div>
             
-
-            
-        </section>
+    
+            <div class="nav__content--container2">
+                <section class="drawn2">
+                    <Botton 
+                        width="170px"
+                        height="40px"
+                        fontzise="20px"
+                        url="#"
+                        target="__self"
+                    />
+                </section>
+    
+                <section>
+                    <ul id="ul2" class="ul">
+                        <li>Coleccion</li>
+                        <li>Coleccion</li>
+                        <li>Coleccion</li>
+                        <li>Coleccion</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
     </nav>
 </header>
+
+
+<style>
+
+    h4{
+        margin: 0;
+        font-size: 30px;
+    }
+    header{
+        margin-top: 100px;
+        margin-bottom: -50px;
+    }
+
+    .nav{
+        display: flex;
+    }
+    .nav__content {
+        display: flex;
+        width: 80%;
+        justify-content: end;
+        align-items: center;
+        gap: 50px;
+        position: relative;
+        margin-left: -30px;
+    }
+
+    .nav__logotype{
+        width: 20%;
+        align-items: center;
+    }
+
+    .nav__logotype img{
+        width: 100%;
+        height: 60px;
+        object-fit: cover;
+    }
+
+    ul{
+        display: block;
+        margin-top: 20px;
+        opacity: 0;
+        position: absolute;
+        background-color: rgb(17, 17, 17);
+        border: 1px solid rgb(73, 73, 73);
+        border-radius: 10px;
+        height: 200px;
+        gap: 10px;
+        transition: all .5s;
+        width: 150px;
+        text-align: center;
+        
+    }
+
+    .ul1{
+        right: 30.8%;
+        z-index: 2;
+        padding-right: 35px;
+    }
+
+    #ul2{
+        padding-right: 35px;
+        right: -2.5%;
+    }
+
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-top: 10px;
+
+    }
+
+    .visible{
+        opacity: 1;
+    }
+</style>
+
+<script>
+
+    const ul = document.getElementById('ul');
+    const ul2 = document.getElementById('ul2');
+    const drawnElements = document.getElementsByClassName('drawn');
+    const drawnElements2 = document.getElementsByClassName('drawn2');
+
+    const touchHandler = (event) => {
+        if (ul?.classList.contains('visible')){
+            ul.classList.remove('visible')
+        } else{
+            ul?.classList.add('visible')
+        }
+    }
+
+    const touchHandler2 = (event) => {
+        if (ul2?.classList.contains('visible')){
+            ul2.classList.remove('visible')
+        } else{
+            ul2?.classList.add('visible')
+        }
+    }
+
+    Array.from(drawnElements).forEach((element) => {
+        element.addEventListener('click', touchHandler);
+    });
+
+    Array.from(drawnElements2).forEach((element) => {
+        element.addEventListener('click', touchHandler2);
+    });
+</script>

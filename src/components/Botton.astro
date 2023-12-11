@@ -1,8 +1,8 @@
 ---
 const { 
         
-        url="#",
-        target="_blank",
+        url="",
+        target="__blank",
         text="booton", 
         width="100px", 
         height="30px", 
@@ -10,6 +10,7 @@ const {
         backgroundColor="#585858", 
         borderColor="rgb(55,55,55)", 
         padding="10px",
+        fontzise=""
 
     } = Astro.props
 ---
@@ -20,7 +21,7 @@ const {
 </a>
 
 
-<style define:vars={{ colorBooton, width, height, backgroundColor, borderColor, padding }}>
+<style define:vars={{ colorBooton, width, height, backgroundColor, borderColor, padding, fontzise }}>
     a{
         padding: var(--padding);
     }
@@ -33,6 +34,7 @@ const {
         height: var(--height);
         border-radius: 10px;
         transition: all .5s;
+        font-size: var(--fontzise);
 
         &:hover{
             transform: scale(1.1);
