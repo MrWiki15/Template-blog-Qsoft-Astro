@@ -13,7 +13,7 @@ Nuestro blog <link>blockchain</link> ofrece una variedad de utilidades para sati
 ## Imagenes
 ¡Echa un vistazo a nuestro atractivo diseño y funcionalidades con estas capturas de pantalla!
 
-![Captura de pantalla 1](/public/screenshots/screenshot-1.png)
+![Captura de pantalla 1](/public/screenshots/screenshot-0.png)
 ![Captura de pantalla 2](/public/screenshots/screenshot-2.png)
 
 ## Instalación
