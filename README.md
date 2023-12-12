@@ -10,7 +10,7 @@ Nuestro blog <link>blockchain</link> ofrece una variedad de utilidades para sati
 - **Herramientas**: Accede a herramientas útiles para trabajar con <link>blockchain</link>, como wallets, exploradores de bloques y calculadoras de tarifas.
 - **Colecciones de NFTs**: Sumérgete en el mundo de los <link>NFTs</link> (Tokens No Fungibles) con nuestra sección de colecciones exclusivas.
 
-## Capturas de pantalla
+## Imagenes
 ¡Echa un vistazo a nuestro atractivo diseño y funcionalidades con estas capturas de pantalla!
 
 ![Captura de pantalla 1](ruta/a/imagen1.png)
