@@ -6,11 +6,6 @@ p{
     margin-top: 8%;
 }
 
-.section2__header{
-    display: flex;
-    align-items: center;
-}
-
 .section2__header--title, .section2__header--all{
     width: 50%;
 }
@@ -37,4 +32,24 @@ p{
 
 .section2__content--card-price{
     text-align: center;
+}
+
+@media (width < 720px) {
+    .section2{
+        margin-top: 15%;
+    }
+
+    .section2__content{
+        flex-direction: column;
+    }
+
+    .section2__content--card-name, .section2__content--card-price{
+        font-size: 1rem;
+    }
+
+    .section2__content--card-botton{
+        width: 100vw;
+        display: grid;
+    }
+
 }

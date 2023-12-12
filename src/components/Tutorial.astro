@@ -104,6 +104,8 @@ const {
 </section>
 
 <style>
+   
+
     .section-component3{
         display: flex;
         align-items: center;
@@ -129,5 +131,19 @@ const {
         box-shadow: -3.013px 3.013px 3.013px 0px rgba(255, 255, 255, 0.39) inset, 2.01px -2.01px 20px 0px rgba(214, 214, 214, 0.17) inset;
         backdrop-filter: blur(37.21466827392578px);
         text-align: center;
+    }
+
+    @media (width < 720px) {
+        .section-component3 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            border: 1px solid blue;
+            gap: 10px;
+        }
+
+        .section-component3 section{
+            width: 160px;
+        }
     }
 </style>

@@ -77,3 +77,18 @@ p{
     width: 25px;
     height: 25px;
 }
+
+@media (width < 720px){
+    .important-card{
+        width: 100%;
+        height: 400px;
+        margin-top: 40px;
+        border-radius: 35.025px;
+        border: 1px solid #363636;
+        background: linear-gradient(169deg, rgba(58, 129, 191, 0.08) 1.85%, rgba(65, 48, 90, 0.08) 98.72%);
+        backdrop-filter: blur(555px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
