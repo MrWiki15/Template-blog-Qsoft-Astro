@@ -13,8 +13,8 @@ Nuestro blog <link>blockchain</link> ofrece una variedad de utilidades para sati
 ## Imagenes
 ¡Echa un vistazo a nuestro atractivo diseño y funcionalidades con estas capturas de pantalla!
 
-![Captura de pantalla 1](ruta/a/imagen1.png)
-![Captura de pantalla 2](ruta/a/imagen2.png)
+![Captura de pantalla 1](/public/screenshots/screenshot-1.png)
+![Captura de pantalla 2](/public/screenshots/screenshot-2.png)
 
 ## Instalación
 ¡Es sencillo comenzar! Solo sigue estos pasos para instalar nuestro proyecto:
@@ -29,6 +29,3 @@ Una vez que hayas instalado el proyecto, puedes ejecutarlo con el comando `npm s
 1. Haz un fork de este repositorio.
 2. Crea una nueva rama para tu contribución.
 3. Realiza los cambios y haz un pull request para que podamos revisarlos.
-
-## Licencia
-Este proyecto está bajo la Licencia <link>MIT</link>. Para más información, revisa el archivo LICENSE.
