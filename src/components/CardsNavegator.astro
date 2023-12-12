@@ -1,5 +1,4 @@
 ---
-import Botton from "./Botton.astro";
 import '../styles/cards-navegator.css'
 const { 
 
@@ -18,13 +17,7 @@ const {
         <div class="nav__content">
             <div class="nav__content--container">
                 <section class="drawn">
-                    <Botton 
-                        width="170px"
-                        height="40px"
-                        fontzise="20px"
-                        url="#"
-                        target="__self"
-                    />
+                    <input class="input" type="button" value="Colecciones X">
                 </section>
     
                 <section>
@@ -40,13 +33,7 @@ const {
     
             <div class="nav__content--container2">
                 <section class="drawn2">
-                    <Botton 
-                        width="170px"
-                        height="40px"
-                        fontzise="20px"
-                        url="#"
-                        target="__self"
-                    />
+                    <input class="input" type="button" value="Colecciones Y">
                 </section>
     
                 <section>
@@ -64,7 +51,6 @@ const {
 
 
 <script>
-
     const ul = document.getElementById('ul');
     const ul2 = document.getElementById('ul2');
     const drawnElements = document.getElementsByClassName('drawn');
@@ -94,3 +80,7 @@ const {
         element.addEventListener('click', touchHandler2);
     });
 </script>
+
+<style>
+    
+</style>
