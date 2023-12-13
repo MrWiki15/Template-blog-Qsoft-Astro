@@ -1,0 +1,111 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+import CardsService from '../components/CardsService.astro';
+import '../styles/service.css'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+</head>
+
+<body>
+    <Header />
+    <main>
+        <div class="content-header-service">
+            <img src="/team/teamqsoft-2.jpg" alt="Qsoft team | Software Development Team">
+            <h3>Our service</h3>
+        </div>
+
+        <section class="cardsService">
+            <CardsService 
+                draw="bx bx-code-alt",
+                title="Web Development", 
+                description="At Qsoft, we create customized, SEO-optimized websites that cater to each client’s specific needs. Transform your vision into a digital reality with us. Qsoft", 
+                textBoton="Read more", 
+    
+                bgcolor="rgb(35,35,35, 0.5)",
+                bordercolor="rgb(155,155,155)",
+                textcolor="#fff",
+                boxshadow="#fff",
+                iconcolor="rgb(155, 45, 196, .67)",
+            />
+
+            <CardsService 
+                title="Website Redesign", 
+                description="Give your website a new lease of life with our website redesign service. At Qsoft, we transform your existing website into a modern, appealing digital experience.", 
+                textBoton="Read more", 
+                draw="bx bx-edit-alt"
+    
+                bgcolor="rgb(35,35,35, 0.5)",
+                bordercolor="rgb(155,155,155)",
+                textcolor="#fff",
+                boxshadow="#fff",
+                iconcolor="rgb(155, 45, 196, .67)",
+            />
+    
+            <CardsService 
+                title="Web Maintenance", 
+                description="Keep your website secure, up-to-date, and running smoothly with our web maintenance and support services. At Qsoft, we handle the tech so you can focus on your business.", 
+                textBoton="Read more", 
+                draw="bx bx-support",
+    
+                bgcolor="rgb(35,35,35, 0.5)",
+                bordercolor="rgb(155,155,155)",
+                textcolor="#fff",
+                boxshadow="#fff",
+                iconcolor="rgb(155, 45, 196, .67)",
+            />
+
+            <CardsService 
+                title="Search Engine", 
+                description="Enhance your website’s visibility on search engines and attract more traffic with our SEO services. At Qsoft, we help you reach the top in the world.", 
+                textBoton="Read more", 
+                draw="bx bx-broadcast"
+    
+                bgcolor="rgb(35,35,35, 0.5)",
+                bordercolor="rgb(155,155,155)",
+                textcolor="#fff",
+                boxshadow="#fff",
+                iconcolor="rgb(155, 45, 196, .67)",
+            />
+    
+            <CardsService 
+                title="Bot Development", 
+                description="We are professionals in creating computer programs that can perform tasks automatically. Use our skills to create bots that can help you in your daily life.", 
+                textBoton="Read more", 
+                draw="bx bxs-bot",
+    
+                bgcolor="rgb(35,35,35, 0.5)",
+                bordercolor="rgb(155,155,155)",
+                textcolor="#fff",
+                boxshadow="#fff",
+                iconcolor="rgb(155, 45, 196, .67)",
+            />
+
+            <CardsService 
+                title="Content Creation", 
+                description="At Qsoft, we offer web analytics. We use advanced tools to track and analyze the performance of your website, providing valuable insights that enhance your online presence.", 
+                textBoton="Read more", 
+                draw="bx bxs-book-heart",
+    
+                bgcolor="rgb(35,35,35, 0.5)",
+                bordercolor="rgb(155,155,155)",
+                textcolor="#fff",
+                boxshadow="#fff",
+                iconcolor="rgb(155, 45, 196, .67)",
+            />
+        </section>
+    </main>
+
+    <Footer />
+</body>
+</html>
+

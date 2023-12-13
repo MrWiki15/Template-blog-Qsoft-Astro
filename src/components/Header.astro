@@ -10,6 +10,7 @@ import { SITE_TITLE } from '../consts';
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
+			<HeaderLink href="/service">Service</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
 		<div class="social-links">
@@ -40,6 +41,13 @@ import { SITE_TITLE } from '../consts';
 		padding: 0 1em;
 		background: white;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+	}
+
+	.internal-links{
+		display: flex;
+		flex-direction: row;
+		gap: 5%;
+		font-size: 30px;
 	}
 	h2 {
 		margin: 0;
@@ -76,6 +84,13 @@ import { SITE_TITLE } from '../consts';
 
 		h2 {
 			font-size: 1rem;
+		}
+		.internal-links{
+			gap: 0;
+		}
+		
+		.internal-links{
+			font-size: 14px;
 		}
 	}
 </style>

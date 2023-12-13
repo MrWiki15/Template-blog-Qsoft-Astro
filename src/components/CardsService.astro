@@ -1,0 +1,106 @@
+---
+const { 
+    draw="bx bx-code-alt",
+    title, 
+    description, 
+    textBoton, 
+    url="https://cusoft.tech",
+    target="_blank",
+
+    bgcolor,
+    bordercolor,
+    textcolor,
+    boxshadow,
+    iconcolor,
+    minwidth="250px",
+    maxwidth="500px",
+    minheight="400px",
+    maxheight="700px",
+
+} = Astro.props
+
+---
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' >
+
+<div class="content-services">
+    <div class="services-box">
+        <i class={draw}></i>
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <a target={target} href={url} class="btn">{textBoton}</a>
+    </div>
+</div>
+
+
+<style define:vars={{ bgcolor, bordercolor, boxshadow, textcolor, iconcolor, minwidth, maxwidth, minheight, maxheight }}>
+
+    .btn{
+    display: inline-block;        
+    background: var(--iconcolor);
+    color: var(--textcolor);
+    padding: 1rem 2.8rem;;
+    border-radius: 3rem;
+    letter-spacing: .1rem;
+    font-weight: 800;
+    box-shadow: 0 0 1rem var(--boxshadow);
+    transition: all .5s;
+    }
+
+    .btn:hover{
+    box-shadow: none;
+    }
+
+    .content-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+    min-width: var(--minwidth);
+    max-width: var(--maxwidth);
+    min-height: var(--minheight);
+    max-height: var(--maxheight);
+        
+    }
+        
+    .content-services .services-box{
+    flex: 1 1 30rem;    
+    background-color:var(--bgcolor);
+    padding: 3rem 2rem 4rem;
+    text-align: center;
+    border: .2rem solid var(--bgcolor);
+    border-radius: 2rem;
+    transition: 0.3s ease ;
+    }
+
+    .content-services .services-box:hover{
+    border:0.2rem solid  var(--bordercolor);
+    transform:scale(1.02);
+    }
+
+    .content-services i{
+    font-size: 7rem;
+    color:var(--iconcolor);
+    }
+
+    .content-services h3 {
+    font-size: 2.6rem;
+    }
+    
+    .content-services p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+    }
+
+    @media (width < 720px) {
+        .content-services h3 {
+        font-size: 1.5rem;
+        }
+        
+        .content-services p{
+        font-size: 1rem;
+        margin: 1rem 0 3rem;
+        }
+    }
+</style>
